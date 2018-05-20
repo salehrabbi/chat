@@ -6,3 +6,7 @@ $(function () {
         height: '80vh'
     });
 });
+
+$(".useritem-wraper-parent .arrow").click(function(){
+    $(".useritem-wraper-parent").toggleClass("active");
+});

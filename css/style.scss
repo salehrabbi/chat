@@ -52,7 +52,7 @@ body {
         .slimScrollDiv {
             height: calc(100vh - 125px) !important;
         }
-        .useritem-wraper{
+        .useritem-wraper {
             height: calc(100vh - 125px) !important;
         }
     }
@@ -169,7 +169,7 @@ body {
         background: #f3f3f3;
     }
     .message {
-
+        padding: 0 15px;
         padding-top: 55px;
         height: calc(100vh - 214px) !important;
         .item {
@@ -192,7 +192,7 @@ body {
         }
         .text {
             float: left;
-            width: calc(100% - 97px);
+            width: calc(100% - 72px);
             background: #e1e1e1;
             border-radius: 20px;
             padding: 10px 20px;
@@ -225,7 +225,7 @@ body {
                 top: 10px;
                 a {
                     color: #d4d4d4;
-                    font-size: 35px;
+                    font-size: 24px;
                     display: inline-block;
                     margin-left: 15px;
                 }
@@ -235,7 +235,7 @@ body {
                 border: none;
                 width: 100%;
                 background: #fff;
-                font-size: 20px;
+                font-size: 18px;
                 color: #a4a3a3;
                 padding: 10px 30px;
                 padding-right: 160px;
@@ -260,4 +260,150 @@ body {
 }
 
 
-@media (max-width:1235px) {}
+@media (max-width:1199px) {
+    .chat .useritem .comment-rate li .fa-angle-right {
+        margin-left: 0;
+    }
+    .chat .useritem .comment-rate li {
+        margin-right: 5px;
+    }
+    .chat .message .item {
+        padding: 0 15px;
+    }
+
+}
+
+
+@media (max-width:991px) {
+    .chat .useritem-wraper-parent .useritem-wraper,
+    .chat .useritem-wraper-parent .slimScrollDiv,
+    .chat .message,
+    .chat .message-wraper .slimScrollDiv {
+        height: calc(100vh - 200px) !important;
+    }
+    .chat .send-message .text input {
+        height: 40px;
+        font-size: 14px;
+    }
+    .chat .send-message button {
+        font-size: 20px;
+        height: 41px;
+    }
+    .chat .send-message .text .icon {
+        top: 3px;
+    }
+    .chat .useritem .avator img {
+        height: 40px;
+        width: 40px;
+    }
+    .chat .useritem .text {
+        width: calc(100% - 54px);
+    }
+    .chat .useritem .avator .online {
+        right: -4px;
+    }
+}
+
+.useritem-wraper-parent .arrow {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .chat .useritem .text {
+        display: none;
+    }
+    .useritem-wraper-parent {
+        position: absolute;
+        height: calc(100% - 74px);
+        width: 100px;
+        left: 15px;
+        top: 0;
+        background: #fff;
+        z-index: 55;
+        transition: .1s;
+        .arrow {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 0 15px 15px;
+            border-color: transparent transparent transparent #fff;
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            display: block;
+            cursor: pointer;
+            i {
+                position: relative;
+                left: -13px;
+                top: -10px;
+            }
+        }
+    }
+    .chat .useritem-wraper-parent.active {
+        width: 100%;
+
+        .useritem .text {
+            display: block;
+
+        }
+        .useritem .avator {
+            float: left;
+        }
+        .useritem {
+            text-align: left;
+        }
+        .arrow {
+            border-color: transparent transparent transparent #f03c57;
+            right: 0px;
+            color: #fff;
+            transform: rotate(180deg);
+            z-index: 100;
+            i {
+                left: -11px;
+                top: -13px;
+            }
+        }
+    }
+    .chat .useritem {
+        text-align: center;
+    }
+    .chat .useritem .avator {
+        float: none;
+    }
+    .chat .message .item {
+        margin-left: 86px;
+    }
+    .chat .message .avator {
+        margin-right: 15px;
+    }
+    .chat .message .item.right .avator {
+        margin-left: 15px;
+    }
+    .chat .message .text {
+        width: calc(100% - 67px);
+    }
+    .chat .send-message .text input {
+        padding-right: 123px;
+    }
+}
+
+
+@media (max-width:575px) {
+    .chat .username a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:480px) {
+    .chat .message .text {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+    .chat .send-message .text .icon {
+        right: 20px;
+    }
+    .chat .send-message .text input {
+        padding-right: 94px;
+        padding-left: 15px;
+    }
+}
