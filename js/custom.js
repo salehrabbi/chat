@@ -1,8 +1,8 @@
 $(function () {
     $('.chat .message').slimScroll({
-        height: '1000px'
+        height: '63vh'
     });
     $('.chat .useritem-wraper').slimScroll({
-        height: '1114px'
+        height: '80vh'
     });
 });
