@@ -20,7 +20,8 @@ body {
 
 .chat .username {
   border-bottom: 2px solid #dbdbdb;
-  padding: 10px 0; }
+  padding: 10px 0;
+  height: 50px; }
   .chat .username span {
     display: inline-block;
     height: 10px;
@@ -35,8 +36,12 @@ body {
     color: #808080;
     font-size: 20px;
     vertical-align: middle; }
+.chat .useritem-wraper-parent .slimScrollDiv {
+  height: calc(100vh - 125px) !important; }
+.chat .useritem-wraper-parent .useritem-wraper {
+  height: calc(100vh - 125px) !important; }
 .chat .useritem {
-  padding: 31px 15px;
+  padding: 14.4px 15px;
   border-bottom: 2px solid #dbdbdb; }
   .chat .useritem .avator {
     border: 0.125rem solid #d7d7d7;
@@ -46,8 +51,8 @@ body {
     float: left;
     position: relative; }
     .chat .useritem .avator img {
-      height: 4.375rem;
-      width: 4.375rem;
+      height: 3.75rem;
+      width: 3.75rem;
       border-radius: 50%; }
     .chat .useritem .avator .online {
       height: 17px;
@@ -65,14 +70,14 @@ body {
     width: calc(100% - 5.8125rem);
     padding-left: 0.9375rem; }
     .chat .useritem .text a.title {
-      font-size: 1.375rem;
+      font-size: 1.125rem;
       font-weight: 500;
       color: #808080;
       font-family: "Raleway", sans-serif; }
     .chat .useritem .text .review-follow {
       margin: 3px 0; }
     .chat .useritem .text a.review {
-      font-size: 1.0625rem;
+      font-size: 0.875rem;
       color: #f1375e;
       font-weight: 300; }
   .chat .useritem .comment-rate {
@@ -85,7 +90,7 @@ body {
       .chat .useritem .comment-rate li:last-child {
         margin-right: 0; }
       .chat .useritem .comment-rate li span {
-        font-size: 0.9375rem;
+        font-size: 0.875rem;
         color: #808080;
         font-family: "Raleway", sans-serif;
         display: inline-block;
@@ -96,10 +101,10 @@ body {
         margin-right: 5px;
         color: #dfba4b; }
       .chat .useritem .comment-rate li i {
-        font-size: 20px; }
+        font-size: 15px; }
       .chat .useritem .comment-rate li .fa-star {
         color: #ff9c00;
-        font-size: 1.25rem; }
+        font-size: 0.9375rem; }
       .chat .useritem .comment-rate li .fa-angle-right {
         color: #808080;
         margin-left: 10px; }
@@ -119,9 +124,13 @@ body {
       margin-right: 5px; }
 .chat .useritem.active {
   background: #f3f3f3; }
+.chat .message-wraper .slimScrollDiv {
+  height: calc(100vh - 214px) !important; }
+.chat .message-wraper {
+  background: #f3f3f3; }
 .chat .message {
-  background: #f3f3f3;
-  padding-top: 55px; }
+  padding-top: 55px;
+  height: calc(100vh - 214px) !important; }
   .chat .message .item {
     padding: 0 100px;
     margin-bottom: 40px; }
@@ -134,8 +143,8 @@ body {
     position: relative;
     margin-right: 20px; }
     .chat .message .avator img {
-      height: 4.0625rem;
-      width: 4.0625rem;
+      height: 2.5rem;
+      width: 2.5rem;
       border-radius: 50%; }
   .chat .message .text {
     float: left;
@@ -154,10 +163,10 @@ body {
 .chat .send-message {
   background: #f3f3f3;
   border-top: 2px solid #dbdbdb;
-  padding: 20px; }
+  padding: 15px; }
   .chat .send-message .text {
     float: left;
-    width: calc(100% - 120px);
+    width: calc(100% - 100px);
     position: relative;
     border: 1px solid #e6e6e6; }
     .chat .send-message .text .icon {
@@ -170,7 +179,7 @@ body {
         display: inline-block;
         margin-left: 15px; }
     .chat .send-message .text input {
-      height: 70px;
+      height: 55px;
       border: none;
       width: 100%;
       background: #fff;
@@ -181,10 +190,10 @@ body {
   .chat .send-message button {
     background: #f03c57;
     color: #fff;
-    height: 70px;
-    width: 120px;
+    height: 55px;
+    width: 100px;
     border: none;
-    font-size: 40px;
+    font-size: 25px;
     float: left; }
 
 @media (min-width: 1366px) {
